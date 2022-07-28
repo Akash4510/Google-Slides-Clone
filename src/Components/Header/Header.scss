@@ -1,0 +1,124 @@
+.app__header {
+  padding: 5px 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: var(--thin-border);
+}
+
+.app__header-left-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.app__header-logo-container {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #6f6f6f2d;
+  }
+
+  img {
+    width: 52px;
+  }
+}
+
+.app__header-title-container {
+  margin-top: 3px;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    input {
+      width: 215px;
+      height: 27px;
+      outline: none;
+      border: 1px solid;
+      border-radius: var(--border-radius);
+      border-color: transparent;
+
+      font: 'Open Sans', sans-serif;
+      font-size: 1.14rem;
+      font-weight: 400;
+
+      padding: 2px 7px;
+
+      &:hover {
+        border-color: rgba(80, 80, 80, 0.173);
+      }
+
+      &:focus {
+        padding-inline: 6px;
+        border: 2px solid var(--clr-blue);
+      }
+    }
+  }
+
+  .icon-container {
+    gap: 5px;
+
+    .icon {
+      position: relative;
+      padding: 4px;
+      border-radius: var(--border-radius);
+      font-size: 1.1rem;
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #6f6f6f2d;
+
+        span {
+          display: block;
+        }
+      }
+
+      span {
+        position: absolute;
+        top: 28px;
+        background-color: rgba(0, 0, 0, 0.847);
+        color: white;
+
+        max-width: 300px;
+
+        padding: 4px 8px;
+
+        font-weight: 500;
+        font-size: 0.85rem;
+
+        display: none;
+      }
+    }
+  }
+
+  .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2px;
+
+    .menu {
+      cursor: pointer;
+      padding: 1px 7px;
+      border-radius: var(--border-radius);
+      transition: all 0.3s ease;
+
+      font-size: 0.92rem;
+
+      &:hover {
+        background-color: #6f6f6f2d;
+      }
+    }
+  }
+}

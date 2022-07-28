@@ -1,9 +1,12 @@
 import React from "react";
 
+import "./App.scss";
+import { Header } from "./Components";
+
 const App = () => {
   return (
-    <div>
-      <h1>Google Slides</h1>
+    <div className="app">
+      <Header />
     </div>
   );
 };
