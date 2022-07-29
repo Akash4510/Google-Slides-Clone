@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-
-import { MdDriveFileMoveOutline } from "react-icons/md";
+import { AiOutlinePlaySquare } from "react-icons/ai";
+import { IoMdLock } from "react-icons/io";
+import { MdDriveFileMoveOutline, MdOutlineComment, MdArrowDropDown } from "react-icons/md";
 import { BiStar } from "react-icons/bi";
 import { BsCloudCheck } from "react-icons/bs";
 
 import "./Header.scss";
 import logo from "../../Assets/logo.png";
+import googleMeetIcon from "../../Assets/google_meet_icon.png";
+import elephantImg from "../../Assets/elephant.jfif";
 
 const Header = () => {
   const [fileName, setFileName] = useState("File Name Here");
@@ -56,7 +59,33 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="app__header-utility-container">Utilities</div>
+      <div className="app__header-right-container">
+        <div className="comment-btn">
+          <MdOutlineComment />
+        </div>
+        <div className="meet-btn">
+          <img src={googleMeetIcon} alt="meet" />
+          <div>
+            <MdArrowDropDown />
+          </div>
+        </div>
+        <div className="slideshow-btn">
+          <div>
+            <AiOutlinePlaySquare />
+            <span>Slideshow</span>
+          </div>
+          <div>
+            <MdArrowDropDown />
+          </div>
+        </div>
+        <div className="share-btn">
+          <IoMdLock />
+          <span>Share</span>
+        </div>
+        <div className="profile-btn">
+          <img src={elephantImg} alt="profile" />
+        </div>
+      </div>
     </div>
   );
 };
