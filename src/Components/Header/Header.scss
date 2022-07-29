@@ -124,6 +124,16 @@
       }
     }
   }
+
+  p {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    font-weight: 400;
+
+    color: rgba(35, 35, 35, 0.721);
+
+    margin-left: 10px;
+  }
 }
 
 .app__header-right-container {

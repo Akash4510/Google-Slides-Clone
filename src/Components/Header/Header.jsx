@@ -56,6 +56,7 @@ const Header = () => {
                 </li>
               ))}
             </ul>
+            <p>Last edit was 4 days ago</p>
           </div>
         </div>
       </div>
